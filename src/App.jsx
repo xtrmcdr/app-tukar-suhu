@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import ConfettiExplosion from "react-confetti-explosion";
 
 function App() {
   let [convert, setConvert] = useState(0);
@@ -30,6 +31,7 @@ function App() {
 
   return (
     <>
+      <ConfettiExplosion />
       <div id="borang">
         <form>
           <h1>App Penukar Suhu</h1>
