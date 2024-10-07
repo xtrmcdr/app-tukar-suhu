@@ -15,6 +15,11 @@ function App() {
     setConvert(e.target.value);
   }
 
+  let h1Style = {
+    // textDecoration: "underline",
+    fontStyle: "italic",
+  };
+
   function tukar() {
     if (convert === "kepadaFahrenheit") {
       temp = Number(suhu.value);
@@ -34,7 +39,7 @@ function App() {
       <ConfettiExplosion />
       <div id="borang">
         <form>
-          <h1>App Penukar Suhu</h1>
+          <h1 style={h1Style}>App Penukar Suhu</h1>
           <input type="number" id="suhu" />
           <br />
 
